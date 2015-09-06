@@ -1,0 +1,87 @@
+.removable-wrapper {
+  cursor: default;
+  background-color: @gray;
+  color: @gray-lighter;
+  display: inline-block;
+  text-transform: uppercase;
+
+  border-radius: 4px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+
+  .removable-inner {
+    display: inline-block;
+  }
+
+  .removable-action {
+    cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: @gray;
+    position: relative;
+    right: 0;
+    text-align: center;
+    vertical-align: baseline;
+    border-radius: 100%;
+    &:hover {
+      background-color: @gray-light;
+      color: @gray-lighter;
+    }
+  }
+}
+
+[six-removable].six-removable-small {
+  .removable-wrapper {
+    padding-left: 4px;
+    padding-top: 2px;
+    padding-right: 4px;
+    padding-bottom: 2px;
+    font-size: 10px;
+    border-radius: 2px;
+  }
+  .removable-action {
+    display: none;
+  }
+}
+
+.well .removable-wrapper {
+  background-color: darken(@well-bg, 20%);
+  color: @well-bg!important;
+
+  .removable-inner {
+    color: @well-bg;
+  }
+
+  .removable-action {
+    background-color: darken(@well-bg, 20%);
+    color: @well-bg;
+    &:hover {
+      background-color: darken(@well-bg, 20%);
+      color: darken(@well-bg, 10%);
+    }
+  }
+}
+
+.well.well-sm .removable-wrapper {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  .removable-action {
+    font-size: 10px;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.removables-group {
+  span[six-removable] {
+    margin-right: 3px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
