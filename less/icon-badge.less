@@ -1,0 +1,47 @@
+.icon-badge {
+  border: 1px solid @brand-primary;
+  border-radius: @border-radius-base;
+
+  .icon-badge-heading, .icon-badge-addon {
+    display: table-cell;
+    background-color: @brand-primary;
+    color: #FFF;
+    padding: 10px;
+    width: 60px;
+    text-align: center;
+    vertical-align: middle;
+    i.fa {
+      font-size: 30px;
+    }
+  }
+
+  .icon-badge-content {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 10px;
+    strong {
+      text-transform: uppercase;
+    }
+  }
+
+  &.icon-badge-danger {
+    border-color: @alert-danger-bg;
+    .icon-badge-heading, .icon-badge-addon {
+      background-color: @alert-danger-bg;
+    }
+  }
+
+  &.icon-badge-warning {
+    border-color: @alert-warning-bg;
+    .icon-badge-heading, .icon-badge-addon {
+      background-color: @alert-warning-bg;
+    }
+  }
+
+  &.icon-badge-info {
+    border-color: @alert-info-bg;
+    .icon-badge-heading, .icon-badge-addon {
+      background-color: @alert-info-bg;
+    }
+  }
+}

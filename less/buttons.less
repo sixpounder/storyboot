@@ -72,6 +72,15 @@
 .btn-clear {
   .button-variant(@btn-clear-color; @btn-clear-bg; @btn-clear-border);
 }
+
+.well {
+  .btn-clear {
+    .button-variant(@btn-clear-color; @well-bg; @btn-clear-border);
+    &.btn-close {
+      font-size: @font-size-large;
+    }
+  }
+}
 // Success appears as green
 .btn-success {
   .button-variant(@btn-success-color; @btn-success-bg; @btn-success-border);
