@@ -1,0 +1,31 @@
+ul.pieces-collection {
+  margin: 0;
+  padding: 0;
+  li {
+    &:HOVER {
+      background-color: @state-info-bg;
+      border-left: 2px solid @state-info-border;
+      color: @state-info-text;
+    }
+    &.active {
+      background-color: @state-info-bg;
+      border-left: 2px solid @state-info-border;
+      color: @state-info-text;
+    }
+    cursor: default;
+    border: 1px solid transparent;
+    border-left: 2px solid transparent;
+    border-top: 1px solid @gray-lighter;
+    list-style-type: none;
+    &:last-child {
+      border-bottom: 1px solid @gray-lighter;
+    }
+
+    a {
+      display: block;
+      color: inherit;
+      padding: 20px 0px;
+      padding-left: 10px;
+    }
+  }
+}
