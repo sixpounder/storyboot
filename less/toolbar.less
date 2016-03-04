@@ -1,0 +1,44 @@
+@toolbar-bg-color       : @navbar-default-bg;
+@toolbar-nav-color      : #FFF;
+@toolbar-nav-highlight  : lighten(@toolbar-bg-color, 40%);
+@toolbar-nav-active     : @link-color;
+@toolbar-base-width     : 50px;
+
+.toolbar {
+  z-index: 0;
+  background-color: @toolbar-bg-color;
+  width: @toolbar-base-width;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    li {
+      &:hover {
+        background-color: lighten(@toolbar-bg-color, 10%);
+      }
+      &.toolbar-hide {
+        cursor: pointer;
+      }
+      &.active {
+        color: #FFF;
+        background-color: @toolbar-nav-active;
+      }
+      a {
+        display: block;
+        padding: 10px 0px;
+        color: @toolbar-nav-color;
+        text-align: center;
+        font-size: 1.5em;
+        text-decoration: none;
+        span {
+          font-size: 12px;
+          color: inherit;
+          display: none;
+        }
+        &:HOVER {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
