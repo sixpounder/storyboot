@@ -7545,7 +7545,6 @@ body.padded {
 .navbar {
   font-size: 13px;
   font-weight: 300;
-  border: none;
 }
 .navbar .navbar-toggle:hover .icon-bar {
   background-color: #b3b3b3;
@@ -7606,6 +7605,18 @@ body.padded {
 .navbar-inverse .dropdown-menu > .active > a,
 .navbar-inverse .dropdown-menu > .active > a:hover {
   background-color: #006687;
+}
+.btn {
+  padding: 8px 12px;
+}
+.btn-lg {
+  padding: 16px 20px;
+}
+.btn-sm {
+  padding: 8px 12px;
+}
+.btn-xs {
+  padding: 4px 6px;
 }
 .btn-group .btn ~ .dropdown-toggle {
   padding-right: 16px;
