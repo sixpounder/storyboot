@@ -1534,7 +1534,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: "Ubuntu Mono", Monaco, Consolas, "Courier New", monospace;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 code {
   padding: 2px 4px;
@@ -7545,6 +7545,7 @@ body.padded {
 .navbar {
   font-size: 13px;
   font-weight: 300;
+  border: none;
 }
 .navbar .navbar-toggle:hover .icon-bar {
   background-color: #b3b3b3;
